@@ -94,7 +94,7 @@ class Block {
 					</li> 
 				<?php endforeach; ?>
 			</ul>
-			<p><?php echo 'The current post ID is ' . get_the_ID() . '.', 'site-counts'; //or can be used with sanitize_text_field(GET['post_id'])?></p>
+			<p><?php echo 'The current post ID is ' . get_the_ID(); // or can be used with sanitize_text_field(GET['post_id']). ?></p>
 			<?php
 			$xwp_top_posts = $this->xwp_get_top_posts_cat_foo_baz();
 			if ( $xwp_top_posts->found_posts ) :
