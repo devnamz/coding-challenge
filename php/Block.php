@@ -80,7 +80,7 @@ class Block {
 						<?php echo 'There are ' . $post_count . ' ' . $post_type_object->labels->name; ?> 
 					</li> 
 			<?php endforeach;	?>
-			</ul><p><?php echo 'The current post ID is ' . $_GET['post_id'] . '.'; ?></p>
+			<p><?php echo 'The current post ID is ' . get_the_ID(); //or can be used with sanitize_text_field(GET['post_id'])?></p>
 
 			<?php
 			$query = new WP_Query(  array(
